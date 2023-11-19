@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social Desbravadores Sociais</title>
+    <script type="text/javascript">
+        var verifyCallback = function (response) {
+            alert(response);
+        };
+        var widgetId1;
+        var onloadCallback = function () {
+            // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
+            // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
+            widgetId1 = grecaptcha.render('example1', {
+                'sitekey': '6Ld3ABMpAAAAAMoGd4JRJ7sBduDojX_cb4gbgBuU',
+                'theme': 'light'
+            });
+        };
+    </script>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="javascript:alert(grecaptcha.getResponse(widgetId1));">
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Lembrar-me</label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <div class="register-link">
+                <p>Não possui uma conta? <a href="#">Registre-se</a></p>
+            </div>
+            <div id="example1"></div>
+
+        </form>
+        <br>
+        <!-- POSTs back to the page's URL upon submit with a g-recaptcha-response POST parameter. -->
+        <form action="?" method="POST">
+            <div id="example3"></div>
+
+            <button type="submit" class="btn" value="getResponse">Login</button>
+        </form>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+</body>
+
+</html>
