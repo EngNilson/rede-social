@@ -1,0 +1,87 @@
+/*Folha de Estilos da página do post
+@author Nilson Gutierres filho 
+*/
+
+/* Importação de fontes da Google*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* CSS RESET */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Popins", sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.Container {
+    margin: 0 auto;
+}
+
+/* Conteúdo */
+#conteudo {
+    padding: 50px 0px;
+}
+
+#conteudo h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.Flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Cartões */
+.Card {
+    margin-top: 25px;
+    width: 338px;
+    height: 320px;
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+.Card h3 {
+    margin-top: 35px;
+    padding: 10px;
+}
+
+.Card p {
+    text-align: left;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.Card a {
+    padding: 10px 100px;
+    border: 0;
+}
+
+/* Rodapé */
+.rodape {
+    position: relative;
+    top: 90%;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.rodape h3 {
+    margin-top: 30px;
+}
+
+.rodape p {
+    align-items: center;
+    color: black;
+    margin-left: 10px;
+}
