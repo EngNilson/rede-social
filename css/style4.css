@@ -1,0 +1,87 @@
+@import url("https:fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: url('/img/banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    margin: 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.form .cadastro {
+    margin: auto;
+    padding: 20px;
+}
+
+.cadastro_usuario {
+    margin: 0.5%;
+    width: fit-content;
+    align-items: center;
+    text-align: left;
+    border-radius: 5px;
+    border-style: 1px solid white;
+    background-color: transparent;
+    padding: 5px;
+    color: #ffffff;
+
+}
+
+.cadastro_usuario ::placeholder {
+    padding: 10px;
+}
+
+button[type=submit] {
+    width: 15%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: outset;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Rodapé */
+.rodape {
+    position: left;
+    margin: 5px;
+    font-size: 14px;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
+
+.rodape h3 {
+    margin-top: 20px;
+}
+
+.rodape p {
+    align-items: center;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
